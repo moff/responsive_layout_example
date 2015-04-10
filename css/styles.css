@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'gotham_mediumregular';
+    src: url('../fonts/ufonts.com_gotham-medium-webfont.eot');
+    src: url('../fonts/ufonts.com_gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts.com_gotham-medium-webfont.woff2') format('woff2'),
+         url('../fonts/ufonts.com_gotham-medium-webfont.woff') format('woff'),
+         url('../fonts/ufonts.com_gotham-medium-webfont.ttf') format('truetype'),
+         url('../fonts/ufonts.com_gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+  background-color: #f1f1f1;
+  font-family: 'gotham_mediumregular';
+}
+
+.header
+{
+  background-color: #fff;
+  margin-top: 37px;
+  margin-bottom: 36px;
+}
+
+.content
+{
+  background-color: #fff;
+}
+
+.content__wrapper
+{
+  padding-top: 61px;
+  padding-bottom: 102px;
+}
+
+.content__wrapper,
+.header__wrapper
+{
+  margin: 0px auto;
+}
+
+.header__wrapper
+{
+  position: relative;
+  height: 127px;
+}
+
+#header_logo
+{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/*#header_logo img
+{
+  border: 1px dotted #ccc;
+}*/
+
+#header_feedback
+{
+  position: absolute;
+  right: 0px;
+  top: 30px;
+}
+
+#header_menu
+{
+  position: absolute;
+  top: 46px;
+  right: 285px;
+}
+
+#header_menu li
+{
+  float: left;
+  list-style: none;
+}
+
+#header_menu a
+{
+  font-family: 'gotham_mediumregular';
+  color: #001111;
+  font-size: 12px;
+  padding: 10px 25px;
+  letter-spacing: 1px;
+}
+
+#header_search
+{
+  border-bottom: 2px solid #eaeaea;
+  padding: 0px;
+  position: absolute;
+  top: 42px;
+  right: 104px;
+  padding-bottom: 5px;
+}
+
+#search_input
+{
+  padding: 6px 0px;
+  border: 0px;
+  width: 129px;
+}
+
+#search_input:focus
+{
+  outline-width: 0;
+}
+
+#search_button
+{
+  background: url('../images/lens.png') no-repeat;
+  width: 16px;
+  height: 16px;
+  padding: 0px;
+  border: 0px;
+  text-indent: -9999px;
+  margin-bottom: 6px;
+}
+
+.content__block
+{
+  display: block;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
+  
+.content__block:hover
+{
+  text-decoration: none;
+}
+
+.content__block:hover .content__image
+{
+  background: url("../images/icon_sprite.png") 182px 0px;
+}
+
+.content__image
+{
+  width: 182px;
+  height: 182px;
+  margin: 0px auto;
+  background: url("../images/icon_sprite.png");
+}
+
+.content__header
+{
+  font-size: 21px;
+  color: #111111;
+  margin: 52px 0px 48px;
+}
+
+.content__disclaimer
+{
+  color: #888888;
+  font-size: 12px;
+  width: 80%;
+  margin: 0px auto;
+  line-height: 22px;
+}
+
+#get_in_touch
+{
+  width: 535px;
+  margin: 82px auto;
+  background: #fff;
+  text-align: center;
+  padding: 0px 57px 51px;
+}
+
+#get_in_touch_header
+{
+  padding-top: 104px;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+#get_in_touch p
+{
+  color: #888888;
+  font-size: 12px;
+  margin: 39px auto;
+  padding: 0px 60px;
+  line-height: 32px;
+}
+
+#get_in_touch_form
+{
+  margin-top: 97px;
+}
+
+#get_in_touch_form label
+{
+  font-size: 12px;
+  margin-bottom: 28px;
+}
+
+#get_in_touch_form .form-control
+{
+  padding: 27px 54px;
+}
+
+#get_in_touch_form .form-group {
+  margin-bottom: 51px;
+}
+
+#get_in_touch_submit
+{
+  width: 52px;
+  height: 52px;
+  background: url('../images/submit.png');
+  border: 0px;
+  padding: 0px;
+  text-indent: -9999px;
+  margin-top: 11px;
+}
+
+#get_in_touch_form #form_message
+{
+  padding-top: 18px;
+}
+
+
+
+
+
+/*this is for menu*/
+@media screen and (min-width: 545px) and (max-width: 991px) {
+  .header__wrapper
+  {
+    position: relative;
+    height: 180px;
+  }
+  
+  #header_menu
+  {
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    top: auto;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #header_menu ul
+  {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+/*this is for menu*/
+@media screen and (max-width: 544px) {
+  .header__wrapper
+  {
+    position: relative;
+    height: 280px;
+  }
+  
+  
+  #get_in_touch
+  {
+    width: 100%;
+    padding: 0px 17px 51px;
+  }
+  
+  #get_in_touch_form .form-control
+  {
+    padding: 27px 24px;
+  }
+  
+  #header_menu
+  {
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    top: auto;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #header_menu ul
+  {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  #header_menu li
+  {
+    float: none;
+    display: block;
+  }
+  
+  #header_menu a
+  {
+    display: block;
+    padding: 5px 5px;
+  }
+}
+
+/*this is for logo shifting*/
+@media screen and (max-width: 500px) {
+  .header__wrapper
+  {
+    position: relative;
+    height: auto;
+  }
+  
+  #header_search
+  {
+    border-bottom: 2px solid #eaeaea;
+    padding: 0px;
+    position: static;
+    width: 90%;
+    padding-bottom: 5px;
+    margin: 0px auto 40px;
+  }
+  
+  #header_search input
+  {
+    width: 90%;
+  }
+  
+  #header_feedback
+  {
+    position: static;
+    margin: 0px auto 40px;
+    text-align: center;
+  }
+  
+  #header_logo
+  {
+    position: static;
+    margin: 0px auto 40px;
+    text-align: center;
+  }
+  
+  #header_menu
+  {
+    position: static;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1659px) {
+  .content__wrapper
+  {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1660px) {
+  .header__wrapper,
+  .content__wrapper
+  {
+    width: 1131px;
+  }
+}
+
